@@ -21,7 +21,7 @@ Windows video player for high-refresh displays, HDR films and a more visual way 
 <td width="50%" valign="top">
 <strong>Playback HUD</strong><br>
 See the HDR-to-display color path and tone-mapping mode. Scrub the timeline with visual previews.<br><br>
-<a href="assets/hud.webp"><img src="assets/hud.webp" alt="Playback HUD: HDR10-to-SDR color path, dynamic tone mapping, audio layout and timeline preview" width="100%"></a>
+<a href="assets/hud.webp"><img src="assets/hud.webp" alt="Playback HUD: Dolby Vision color path, tone mapping, audio layout and timeline previews with chapters and marks" width="100%"></a>
 </td>
 <td width="50%" valign="top">
 <strong>Frame generation controls</strong><br>
