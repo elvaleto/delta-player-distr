@@ -24,12 +24,12 @@ Windows video player for high-refresh displays, HDR films and a more visual way 
 <tr>
 <td width="50%" valign="top">
 <strong>Marks · 0.1.2 preview</strong><br>
-Keep a scene, add a note, jump back to it. Searchable thumbnail cards, grouped by video.<br><br>
+Save scenes with notes. Search thumbnail cards and jump straight back.<br><br>
 <a href="assets/marks.jpg"><img src="assets/marks.jpg" alt="Marks: four real scene thumbnails with comments and timestamps" width="100%"></a>
 </td>
 <td width="50%" valign="top">
 <strong>Watch history · 0.1.2 preview</strong><br>
-Find a video by its thumbnail and resume. Saved position, progress and session date in one view.<br><br>
+Resume from thumbnails. See saved positions, progress and dates.<br><br>
 <a href="assets/history.jpg"><img src="assets/history.jpg" alt="Watch history: thumbnails, saved positions, progress bars and dates" width="100%"></a>
 </td>
 </tr>
