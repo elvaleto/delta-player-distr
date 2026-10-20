@@ -19,44 +19,37 @@ Windows video player for high-refresh displays, HDR films and a more visual way 
 <table>
 <tr>
 <td colspan="2" valign="top">
-<strong>Playback HUD</strong><br>
-See the HDR-to-display color path and tone-mapping mode. Scrub the timeline with visual previews.<br><br>
+<strong>Playback HUD</strong><br><br>
 <a href="assets/hud.webp"><img src="assets/hud.webp" alt="Playback HUD: Dolby Vision color path, tone mapping, audio layout and timeline previews with chapters and marks" width="100%"></a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<strong>Frame generation controls</strong><br>
-Choose a backend, target your display refresh or a frame-rate multiplier, and tune generation resolution.<br><br>
+<strong>Frame generation controls</strong><br><br>
 <a href="assets/settings.webp"><img src="assets/settings.webp" alt="Interpolation settings: RIFE on NVIDIA TensorRT CiG, frame-rate targets, multiplier and generation resolution" width="100%"></a>
 </td>
 <td width="50%" valign="top">
-<strong>Pipeline diagnostics</strong><br>
-Inspect live GPU shader fusion, Dolby Vision tone mapping, ICC 3D LUT transforms, optical flow scene cuts and frame generation.<br><br>
+<strong>Pipeline diagnostics</strong><br><br>
 <a href="assets/osd.webp"><img src="assets/osd.webp" alt="Render pipeline diagnostics: GPU shader fusion, Dolby Vision RPU tonemapping, ICC 3D LUT, optical flow scene detection and NVIDIA VFG" width="100%"></a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<strong>Track routing & dual audio</strong><br>
-Select primary and secondary audio tracks independently. Route sound to two devices with dedicated clocks, resamplers and formats.<br><br>
+<strong>Track routing & dual audio</strong><br><br>
 <a href="assets/tracks.webp"><img src="assets/tracks.webp" alt="Audio track selection: primary and secondary track routing, dual audio outputs, stream formats and bitrates" width="100%"></a>
 </td>
 <td width="50%" valign="top">
-<strong>Media information</strong><br>
-Search stream parameters, container tags, Dolby Vision RPU metadata, mastering luminance and hardware zero-copy D3D12VA decoding.<br><br>
+<strong>Media information</strong><br><br>
 <a href="assets/media-info.webp"><img src="assets/media-info.webp" alt="Media information panel: searchable stream details, Dolby Vision Profile 7 metadata, mastering display colorimetry and D3D12VA decoder" width="100%"></a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<strong>Marks</strong><br>
-Save scenes with comments. Search thumbnail cards grouped by video and jump straight back.<br><br>
+<strong>Marks</strong><br><br>
 <a href="assets/marks.webp"><img src="assets/marks.webp" alt="Marks: scene thumbnails grouped by video, with comments, timestamps and search" width="100%"></a>
 </td>
 <td width="50%" valign="top">
-<strong>Watch history</strong><br>
-Resume from thumbnails. See saved positions, progress and dates.<br><br>
+<strong>Watch history</strong><br><br>
 <a href="assets/history.webp"><img src="assets/history.webp" alt="Watch history: video thumbnails, saved positions, progress bars and session dates" width="100%"></a>
 </td>
 </tr>
