@@ -9,6 +9,15 @@ All notable changes and release notes for Delta Player.
 
 ## English
 
+### [0.1.2 (build 1252)] - 2026-10-23
+#### Added & Improved
+- **Playback Speed Configuration:**
+  - Added playback speed settings under System (`system.playback_speed` and `system.playback_speed_enabled`).
+  - Option to automatically activate your preferred playback speed when opening new files and starting the player.
+  - Chosen playback speed adjusted via HUD chip, slider, or context menu is now saved to `config.ini`.
+
+---
+
 ### [0.1.2 (build 1239)] - 2026-10-22
 #### Added & Improved
 - **Context Menu Interpolation:** Added a dedicated **Interpolation** submenu to the right-click menu with direct access to NVIDIA VFG quality presets (High, Medium, Low), RIFE neural models, and MicroRIFE.
@@ -67,6 +76,15 @@ All notable changes and release notes for Delta Player.
 ---
 
 ## Русский
+
+### [0.1.2 (сборка 1252)] - 23.10.2026
+#### Добавлено и улучшено
+- **Настройка скорости воспроизведения:**
+  - В раздел «Система» (System) добавлены настройки скорости (`system.playback_speed` и `system.playback_speed_enabled`).
+  - Возможность автоматически применять выбранную скорость воспроизведения сразу при открытии новых файлов и запуске плеера.
+  - Сохранение установленной скорости в `config.ini` при её изменении через HUD-чип SPEED, ползунок или контекстное меню.
+
+---
 
 ### [0.1.2 (сборка 1239)] - 22.10.2026
 #### Добавлено и улучшено
