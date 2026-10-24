@@ -53,5 +53,8 @@ Third-party components included in or distributed with the Software (such as
 FFmpeg under LGPL, libbluray, libass, HarfBuzz, FreeType, ONNX Runtime, and
 NVIDIA SDKs) remain under their own respective licences, which are located in
 the "licenses/" directory and are not affected by the restrictions above.
-Nothing in Section 3 restricts rights granted by third-party licenses (such as
-LGPL) solely with respect to those specific third-party components.
+Section 3 does not restrict modifying the Software for your own use, or
+reverse engineering it to debug such modifications, to the extent the GNU
+LGPL requires this for the LGPL libraries distributed with the Software
+(FFmpeg, FriBidi, libbluray), including replacing those libraries with
+modified versions.
