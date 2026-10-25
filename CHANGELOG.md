@@ -9,6 +9,24 @@ All notable changes and release notes for Delta Player.
 
 ## English
 
+### [0.1.2 (build 1285)] - 2026-10-25
+#### Added & Improved
+- **Intelligent Decode Planner & CPU Fallback:**
+  - Added automatic decode planning (`decode_plan`) detecting GPU hardware decoder capabilities, profiles, and vendor quirks.
+  - Graceful fallback to CPU decoding when the hardware decoder does not support a specific codec, profile, or bit depth, preventing playback failure or black screens.
+  - Native 4:2:2 and high-bitdepth 4:2:0 processing on GPU: dedicated chroma plane uploading (`yuv420p16`, `yuv422p`, `yuv422p16`) for Direct3D 12 and Vulkan.
+  - Vulkan Video 4:4:4 support and extended GPU chroma upsampling shaders.
+- **Audio HUD Meter & Track Routing:**
+  - Real-time pre-fader HUD audio meter (`ui.output_meter_skin`) showing unattenuated signal level and active channels even when muted or set to low volume.
+  - Audio route indicator and active audio stream format details in the HUD.
+- **Bidirectional Subtitles (FriBidi):**
+  - Bundled `fribidi-0.dll` as a separate delay-loaded DLL under `lib/` for proper RTL text shaping (Arabic, Hebrew) and clean LGPL packaging.
+- **Dolby Vision & Interface Polish:**
+  - Dolby Vision Profile 7 MEL RPU metadata support and base-layer fallback for FEL frames without brightness jumps or crashes.
+  - Improved cursor deadzone filtering against optical sensor micro-drift.
+
+---
+
 ### [0.1.2 (build 1252)] - 2026-10-23
 #### Added & Improved
 - **Playback Speed Configuration:**
@@ -76,6 +94,24 @@ All notable changes and release notes for Delta Player.
 ---
 
 ## Русский
+
+### [0.1.2 (сборка 1285)] - 25.10.2026
+#### Добавлено и улучшено
+- **Интеллектуальный планировщик декодирования и авто-фолбек на CPU:**
+  - Добавлен автоматический планировщик декодирования (`decode_plan`), определяющий возможности GPU-декодера, поддерживаемые профили и аппаратные особенности.
+  - Автоматический переход (fallback) на декодирование силами CPU, если аппаратный декодер видеокарты не поддерживает нужный кодек, профиль или разрядность цвета, исключая ошибки воспроизведения и чёрный экран.
+  - Нативная поддержка 4:2:2 и 4:2:0 высокой разрядности на GPU: раздельная загрузка плоскостей цветности (`yuv420p16`, `yuv422p`, `yuv422p16`) в Direct3D 12 и Vulkan.
+  - Поддержка Vulkan Video 4:4:4 и улучшенные шейдеры апскейла цветности на GPU.
+- **Индикатор аудио и маршрутизация дорожек:**
+  - Аудиометр HUD реального времени до регулировки громкости (pre-fader): шкалы отображают исходный уровень дорожки и каналы даже при низкой громкости плеера или включённом Mute.
+  - Индикатор маршрута звука и параметры активного аудиопотока в интерфейсе HUD.
+- **Субтитры справа налево (FriBidi):**
+  - Библиотека `fribidi-0.dll` вынесена в отдельную DLL с отложенной загрузкой в папке `lib/` для корректного формирования двунаправленного текста (RTL-субтитры) и соблюдения лицензии LGPL.
+- **Dolby Vision и оптимизации интерфейса:**
+  - Поддержка RPU-метаданных Dolby Vision Profile 7 MEL и корректный fallback базового слоя для кадров FEL без скачков яркости.
+  - Улучшенная фильтрация микросмещений курсора мыши на столе.
+
+---
 
 ### [0.1.2 (сборка 1252)] - 23.10.2026
 #### Добавлено и улучшено
