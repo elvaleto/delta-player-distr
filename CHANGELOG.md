@@ -72,7 +72,7 @@ All notable changes and release notes for Delta Player.
 #### Highlights
 - **VRR Frame Pacing:** Accurate presentation timing designed for variable-refresh-rate (G-Sync / FreeSync) displays.
 - **Neural Frame Interpolation:** RIFE and lightweight Micro Riffe compute shaders for smooth playback on high-refresh screens.
-- **NVIDIA Video Frame Generation (VFG):** Native optical flow interpolation for GeForce RTX 40 / 50 series.
+- **NVIDIA Video Frame Generation (VFG):** Native optical flow interpolation for GeForce RTX series.
 - **Predictive Scene-Cut Detection:** Motion-vector analysis using future frames to avoid blending artifacts across scene cuts.
 - **Dolby Vision through HDR10:** Dynamic metadata tonemapping for HDR10 displays (Profile 7 FEL residual bypassed).
 - **Dynamic Tone Mapping (DTM):** Real-time adaptation of HDR highlights to display luminance limits.
@@ -158,7 +158,7 @@ All notable changes and release notes for Delta Player.
 #### Ключевые возможности
 - **VRR-синхронизация:** Вывод кадров под мониторы с переменной частотой обновления (G-Sync / FreeSync).
 - **Нейросетевая генерация кадров:** Алгоритмы RIFE и облегчённый шейдер Micro Riffe для повышения плавности видео.
-- **NVIDIA Video Frame Generation (VFG):** Аппаратная интерполяция на базе оптического потока для карт GeForce RTX 40 / 50.
+- **NVIDIA Video Frame Generation (VFG):** Аппаратная интерполяция на базе оптического потока для карт GeForce RTX.
 - **Упреждающее определение склеек сцен:** Анализ векторов движения будущих кадров для предотвращения артефактов склейки на границах сцен.
 - **Dolby Vision через HDR10:** Обработка динамических метаданных RPU для вывода на стандартные HDR10-дисплеи.
 - **Динамический тонмаппинг (DTM):** Интеллектуальная адаптация яркости HDR-контента под параметры монитора.

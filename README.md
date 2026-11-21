@@ -62,7 +62,7 @@ Windows video player for high-refresh displays, HDR films and a more visual way 
 <details>
 <summary>Compatibility</summary>
 
-Windows 11 x64. Direct3D 12 requires Feature Level 12_1 / Shader Model 6.6; Vulkan is a separate executable. Features depend on the GPU, driver and display. Native NVIDIA VFG targets RTX 40 / 50; other interpolation methods have their own requirements. VRR depends on display and driver configuration. Dolby Vision Profile 7 FEL residual is not applied. This is an alpha distribution; AMD and older GPU coverage remains limited.
+Windows 11 x64. Direct3D 12 requires Feature Level 12_1 / Shader Model 6.6; Vulkan is a separate executable. Features depend on the GPU, driver and display. Native NVIDIA VFG targets GeForce RTX; other interpolation methods have their own requirements. VRR depends on display and driver configuration. Dolby Vision Profile 7 FEL residual is not applied. This is an alpha distribution; AMD and older GPU coverage remains limited.
 
 </details>
 
@@ -89,7 +89,7 @@ flowchart LR
 
 ### Video frame interpolation and refresh rate
 
-- **Neural frame generation.** Choose NVIDIA Video Frame Generation (VFG), RIFE, or the lightweight Micro Riffe compute shader. Native VFG targets GeForce RTX 40 and 50 series, with experimental modes for select RTX 20 and 30 series GPUs. RIFE runs through TensorRT on compatible NVIDIA GPUs. The Direct3D 12 build also offers DirectML and TensorRT with CUDA in Graphics (CiG).
+- **Neural frame generation.** Choose NVIDIA Video Frame Generation (VFG), RIFE, or the lightweight Micro Riffe compute shader. Native VFG targets GeForce RTX GPUs. RIFE runs through TensorRT on compatible NVIDIA GPUs. The Direct3D 12 build also offers DirectML and TensorRT with CUDA in Graphics (CiG).
 - **Frame rate and scene cuts.** Target your display's refresh rate, a fixed frame rate, or a multiple of the source frame rate. Adjust the resolution used for generation to suit your GPU. Scene-cut detection can skip interpolation at cuts to avoid blending adjacent shots.
 - **VRR and fixed-refresh playback.** Frame pacing supports variable refresh rate (VRR) on compatible displays. Configurable frame repeats let you target a minimum presentation rate or the highest multiple that fits the display refresh rate.
 
