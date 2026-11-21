@@ -68,6 +68,25 @@ Windows 11 x64. Direct3D 12 requires Feature Level 12_1 / Shader Model 6.6; Vulk
 
 ## Delta Player features
 
+### Architecture and render pipeline
+
+```mermaid
+flowchart LR
+    A["<b>File / Source</b><br/>File, Blu-ray, URL"] --> B["<b>FFmpeg Engine</b><br/>Demux & Decode<br/>D3D12VA / CUDA / CPU"]
+    B -->|Video Frames| C["<b>GPU Processing</b><br/>Color / HDR / Dolby Vision<br/>Frame Gen (VFG / RIFE)<br/>VSR, TrueHDR, Crop, Ambilight"]
+    C -->|Finished Canvas| D["<b>D3D12 / Vulkan Swapchain</b><br/>Video + HUD / OSD Composition<br/>Presenter Pacing (VRR Flip)"]
+    D --> E["<b>Display / Screen</b><br/>VRR / G-Sync & HDR Output"]
+
+    B -.->|Audio PCM| F["<b>Audio Engine</b><br/>WASAPI / Dual Output<br/>Spatial HRTF"]
+    F -.-> G["<b>Audio Output</b><br/>Speakers / Headphones"]
+```
+
+- **File / Source**: Media file, Blu-ray ISO / BDMV folder, or network stream.
+- **FFmpeg (Demux & Decode)**: Container demuxing and hardware (D3D12VA / CUDA) or CPU video decoding, audio decoding, and subtitle extraction.
+- **GPU Processing**: Color conversions, HDR / Dolby Vision dynamic tone mapping (DTM), neural frame generation (NVIDIA VFG / RIFE), upscaling (VSR, TrueHDR), black-bar cropping, and Ambilight.
+- **D3D12 / Vulkan Swapchain**: Video canvas composition with vector HUD/OSD and subtitles; Presenter pacing synchronized with display refresh rate (VRR flip model).
+- **Display & Audio**: Tear-free playback on VRR/G-Sync and HDR displays with synchronized WASAPI or dual audio output.
+
 ### Video frame interpolation and refresh rate
 
 - **Neural frame generation.** Choose NVIDIA Video Frame Generation (VFG), RIFE, or the lightweight Micro Riffe compute shader. Native VFG targets GeForce RTX 40 and 50 series, with experimental modes for select RTX 20 and 30 series GPUs. RIFE runs through TensorRT on compatible NVIDIA GPUs. The Direct3D 12 build also offers DirectML and TensorRT with CUDA in Graphics (CiG).
