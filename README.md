@@ -4,7 +4,7 @@
 
 **Frame generation. RTX video enhancement. Moments worth saving.**
 
-Windows video player for high-refresh displays, HDR films and a more visual way to navigate your videos.
+Video player for high-refresh displays, HDR films and a more visual way to navigate your videos.
 
 [![Download Windows alpha](https://img.shields.io/badge/Download-Windows%20alpha-8bd5ca?style=for-the-badge)](https://github.com/elvaleto/delta-player-distr/releases/latest) [![All releases](https://img.shields.io/badge/All-releases-30363d?style=for-the-badge)](https://github.com/elvaleto/delta-player-distr/releases) [![Changelog](https://img.shields.io/badge/Changelog-Release%20History-3b82f6?style=for-the-badge)](CHANGELOG.md)
 
