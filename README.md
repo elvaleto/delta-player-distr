@@ -8,13 +8,13 @@ Video player for high-refresh displays, HDR films and a more visual way to navig
 
 [![Download Windows alpha](https://img.shields.io/badge/Download-Windows%20alpha-8bd5ca?style=for-the-badge)](https://github.com/elvaleto/delta-player-distr/releases/latest) [![All releases](https://img.shields.io/badge/All-releases-30363d?style=for-the-badge)](https://github.com/elvaleto/delta-player-distr/releases) [![Changelog](https://img.shields.io/badge/Changelog-Release%20History-3b82f6?style=for-the-badge)](CHANGELOG.md)
 
-![Windows 11 x64](https://img.shields.io/badge/Windows%2011-x64-3878c7?style=flat-square) ![NVIDIA RTX](https://img.shields.io/badge/NVIDIA-RTX-76b900?style=flat-square&logo=nvidia&logoColor=white) ![JPEG 2000 GPU](https://img.shields.io/badge/JPEG%202000-GPU%20nvJPEG2000-10b981?style=flat-square) ![RIFE](https://img.shields.io/badge/Interpolation-RIFE%20%2F%20Micro%20Riffe-a78bfa?style=flat-square) ![Renderers](https://img.shields.io/badge/Direct3D%2012-Vulkan-64748b?style=flat-square)
+![Windows 11 x64](https://img.shields.io/badge/Windows%2011-x64-3878c7?style=flat-square) ![NVIDIA RTX](https://img.shields.io/badge/NVIDIA-RTX-76b900?style=flat-square&logo=nvidia&logoColor=white) ![RIFE](https://img.shields.io/badge/Interpolation-RIFE%20%2F%20Micro%20Riffe-a78bfa?style=flat-square) ![Renderers](https://img.shields.io/badge/Direct3D%2012-Vulkan-64748b?style=flat-square)
 
 </div>
 
 | Motion that fits your display | More from your picture |
 | :--- | :--- |
-| **NVIDIA Video Frame Generation, RIFE and Micro Riffe**, with scene-cut detection to avoid blending across cuts. VRR-aware frame pacing. | **Hardware GPU JPEG 2000 (nvJPEG2000)** for DCI 2K/4K 12-bit cinema streams. **RTX Video VSR + TrueHDR**, HDR10 / HLG, and Dolby Vision. |
+| **NVIDIA Video Frame Generation, RIFE and Micro Riffe**, with scene-cut detection to avoid blending across cuts. VRR-aware frame pacing. | **RTX Video Super Resolution + TrueHDR**, HDR10 / HLG, Dolby Vision metadata through HDR10 output, and dynamic tone mapping. |
 
 <table>
 <tr>
@@ -55,7 +55,7 @@ Video player for high-refresh displays, HDR films and a more visual way to navig
 </tr>
 </table>
 
-**Around the film:** hardware GPU JPEG 2000 decoding · Blu-ray ISO & 3D MVC · automatic black-bar cropping for ultrawide screens · Ambilight · two independent audio outputs · Steam Audio for headphones · GPU-drawn HUD and native searchable panels.
+**Around the film:** Blu-ray ISO & 3D MVC · automatic black-bar cropping for ultrawide screens · Ambilight · two independent audio outputs · Steam Audio for headphones · GPU-drawn HUD and native searchable panels.
 
 **Try it:** extract the **whole ZIP**, run `delta-player.exe` or the separate `delta-player-vulkan.exe`, and drop in a video. **F2** → settings; **F1** → controls. Portable data stays beside the app when `portable.ini` is present.
 
